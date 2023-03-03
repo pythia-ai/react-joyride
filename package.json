@@ -126,7 +126,7 @@
     "validate": "npm run lint && npm run test:coverage && flow && npm run build && npm run size",
     "size": "size-limit",
     "prepublishOnly": "npm run validate",
-    "prepare": "npm run validate"
+    "prepare": "npm run build"
   },
   "size-limit": [
     {
