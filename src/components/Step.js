@@ -202,7 +202,8 @@ export default class JoyrideStep extends React.Component {
         type: EVENTS.TOOLTIP,
       });
 
-      this.scope = new Scope(this.tooltip, { selector: '[data-action=primary]' });
+      const tooltip = document.getElementById(`react-joyride-step-${index}`);
+      this.scope = new Scope(tooltip, { selector: '[data-action=primary]' });
       this.scope.setFocus();
     }
 
@@ -241,6 +242,7 @@ export default class JoyrideStep extends React.Component {
   };
 
   setTooltipRef = c => {
+    // eslint-disable-next-line react/no-unused-class-component-methods
     this.tooltip = c;
   };
 
