@@ -36,7 +36,7 @@
   "dependencies": {
     "deepmerge": "^4.2.2",
     "exenv": "^1.2.2",
-    "is-lite": "^0.9.2",
+    "is-lite": "^0.9.3",
     "prop-types": "^15.8.1",
     "react-floater": "^0.7.6",
     "react-is": "^16.13.1",
